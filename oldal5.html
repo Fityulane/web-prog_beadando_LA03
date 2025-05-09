@@ -1,72 +1,285 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
-    <title>Weboldalam</title>
+    <title>🍎 Egészséges Életmód</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
-        <h1>Üdvözöllek a weboldalamon!</h1>
+        <h1>📄 Kalória- és tápérték táblázat</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="oldal1.html">Oldal 1</a></li>
-                <li><a href="oldal2.html">Oldal 2</a></li>
-                <li><a href="oldal3.html">Oldal 3</a></li>
-                <li><a href="oldal4.html">Oldal 4</a></li>
-                <li><a href="oldal5.html">Oldal 5</a></li>
+                <li><a href="index.html">🏠 Főoldal</a></li>
+                <li><a href="oldal1.html">🥗 Táplálkozás</a></li>
+                <li><a href="oldal2.html">🏃‍♀️ Testmozgás</a></li>
+                <li><a href="oldal3.html">🧘 Mentális egészség</a></li>
+                <li><a href="oldal4.html">✉️ Kapcsolat</a></li>
+                <li><a href="oldal5.html">📄 Kalória- és tápérték táblázat</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Táblázat – Mintaadatok</h2>
-        <p>Az alábbi táblázat 25 sort és 7 oszlopot tartalmaz.</p>
-    
-        <table border="1">
-            <thead>
+        <h2>📄 Kalória- és tápérték táblázat</h2>
+        <h3>Egészséges ételek és tápértékük</h3>
+
+        <p>Az egészséges étkezés nemcsak a minőségi alapanyagokról, hanem a megfelelő mennyiségről is szól. Az alábbi
+            táblázatban néhány gyakori, könnyen elkészíthető egészséges étel tápértékét találod meg – 1 adag alapján.
+            Ezek az értékek segítenek abban, hogy tudatosan válassz az étrendedhez illő fogásokat.
+
+            Tápértékek 1 adag ételre (kb. 300–400 g) vonatkoznak:</p>
+
+        <table class="table table-striped table-bordered table-hover align-middle">
+            <thead class="table-warning text-center">
                 <tr>
-                    <th>ID</th>
-                    <th>Név</th>
-                    <th>Kor</th>
-                    <th>Város</th>
-                    <th>Ország</th>
-                    <th>Email</th>
-                    <th>Státusz</th>
+                    <th>#</th>
+                    <th>Étel neve</th>
+                    <th>Kalória (kcal)</th>
+                    <th>Fehérje (g)</th>
+                    <th>Szénhidrát (g)</th>
+                    <th>Zsír (g)</th>
+                    <th>Hozzávalók</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>Kiss Anna</td><td>23</td><td>Budapest</td><td>Magyarország</td><td>anna@example.com</td><td>Aktív</td></tr>
-                <tr><td>2</td><td>Nagy Péter</td><td>30</td><td>Szeged</td><td>Magyarország</td><td>peter@example.com</td><td>Inaktív</td></tr>
-                <tr><td>3</td><td>Tóth Zsófi</td><td>28</td><td>Pécs</td><td>Magyarország</td><td>zsofi@example.com</td><td>Aktív</td></tr>
-                <tr><td>4</td><td>Kovács László</td><td>35</td><td>Győr</td><td>Magyarország</td><td>laszlo@example.com</td><td>Felfüggesztve</td></tr>
-                <tr><td>5</td><td>Szabó Erika</td><td>22</td><td>Debrecen</td><td>Magyarország</td><td>erika@example.com</td><td>Aktív</td></tr>
-                <tr><td>6</td><td>Oláh Gábor</td><td>27</td><td>Kecskemét</td><td>Magyarország</td><td>gabor@example.com</td><td>Inaktív</td></tr>
-                <tr><td>7</td><td>Balogh Rita</td><td>29</td><td>Zalaegerszeg</td><td>Magyarország</td><td>rita@example.com</td><td>Aktív</td></tr>
-                <tr><td>8</td><td>Molnár Dániel</td><td>31</td><td>Szolnok</td><td>Magyarország</td><td>daniel@example.com</td><td>Felfüggesztve</td></tr>
-                <tr><td>9</td><td>Varga Katalin</td><td>26</td><td>Miskolc</td><td>Magyarország</td><td>kata@example.com</td><td>Aktív</td></tr>
-                <tr><td>10</td><td>Farkas Gergő</td><td>33</td><td>Nyíregyháza</td><td>Magyarország</td><td>gergo@example.com</td><td>Inaktív</td></tr>
-                <tr><td>11</td><td>Bognár Márta</td><td>24</td><td>Eger</td><td>Magyarország</td><td>marta@example.com</td><td>Aktív</td></tr>
-                <tr><td>12</td><td>Lukács Norbert</td><td>32</td><td>Tatabánya</td><td>Magyarország</td><td>norbert@example.com</td><td>Felfüggesztve</td></tr>
-                <tr><td>13</td><td>Barna Júlia</td><td>25</td><td>Veszprém</td><td>Magyarország</td><td>julia@example.com</td><td>Aktív</td></tr>
-                <tr><td>14</td><td>Pintér Ádám</td><td>29</td><td>Sopron</td><td>Magyarország</td><td>adam@example.com</td><td>Inaktív</td></tr>
-                <tr><td>15</td><td>Kelemen Eszter</td><td>28</td><td>Békéscsaba</td><td>Magyarország</td><td>eszter@example.com</td><td>Aktív</td></tr>
-                <tr><td>16</td><td>Váradi István</td><td>34</td><td>Nagykanizsa</td><td>Magyarország</td><td>istvan@example.com</td><td>Felfüggesztve</td></tr>
-                <tr><td>17</td><td>Tamás Boglárka</td><td>27</td><td>Kaposvár</td><td>Magyarország</td><td>bogi@example.com</td><td>Aktív</td></tr>
-                <tr><td>18</td><td>Simon Kristóf</td><td>26</td><td>Salgótarján</td><td>Magyarország</td><td>kristof@example.com</td><td>Aktív</td></tr>
-                <tr><td>19</td><td>Halász Judit</td><td>30</td><td>Baja</td><td>Magyarország</td><td>judit@example.com</td><td>Inaktív</td></tr>
-                <tr><td>20</td><td>Mezei Roland</td><td>31</td><td>Dunaújváros</td><td>Magyarország</td><td>roland@example.com</td><td>Aktív</td></tr>
-                <tr><td>21</td><td>Papp Tamás</td><td>33</td><td>Szekszárd</td><td>Magyarország</td><td>tamas@example.com</td><td>Felfüggesztve</td></tr>
-                <tr><td>22</td><td>Fehér Dóra</td><td>24</td><td>Siófok</td><td>Magyarország</td><td>dora@example.com</td><td>Aktív</td></tr>
-                <tr><td>23</td><td>Török Márk</td><td>35</td><td>Esztergom</td><td>Magyarország</td><td>mark@example.com</td><td>Inaktív</td></tr>
-                <tr><td>24</td><td>Bíró Laura</td><td>27</td><td>Hódmezővásárhely</td><td>Magyarország</td><td>laura@example.com</td><td>Aktív</td></tr>
-                <tr><td>25</td><td>Sárközi András</td><td>29</td><td>Szentendre</td><td>Magyarország</td><td>andras@example.com</td><td>Felfüggesztve</td></tr>
+                <tr>
+                    <td>1</td>
+                    <td>Csicseriborsós Buddha-tál</td>
+                    <td>420</td>
+                    <td>18</td>
+                    <td>45</td>
+                    <td>16</td>
+                    <td>Csicseriborsó, quinoa, zöldségek, tahini</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lencsefőzelék (light)</td>
+                    <td>310</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>9</td>
+                    <td>Lencse, répa, hagyma, zöldfűszerek</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Zabkása gyümölcsökkel</td>
+                    <td>280</td>
+                    <td>8</td>
+                    <td>42</td>
+                    <td>7</td>
+                    <td>Zabpehely, alma, fahéj, növényi tej</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sült lazac salátával</td>
+                    <td>360</td>
+                    <td>30</td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>Lazacfilé, zöldsaláta, olívaolaj</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Zöldséges rizstál tofuval</td>
+                    <td>400</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>15</td>
+                    <td>Barna rizs, tofu, paprika, cukkini</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Spenótos omlett</td>
+                    <td>250</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>17</td>
+                    <td>Tojás, spenót, olívaolaj, fokhagyma</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Sült édesburgonya tál</td>
+                    <td>350</td>
+                    <td>6</td>
+                    <td>55</td>
+                    <td>12</td>
+                    <td>Édesburgonya, fűszerek, olívaolaj</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Tonhalsaláta olívával</td>
+                    <td>310</td>
+                    <td>26</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>Tonhal, olíva, saláta, paradicsom</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Görög saláta</td>
+                    <td>290</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>Feta sajt, uborka, paradicsom, olívabogyó</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Avokádós pirítós</td>
+                    <td>330</td>
+                    <td>9</td>
+                    <td>28</td>
+                    <td>22</td>
+                    <td>Teljes kiőrlésű kenyér, avokádó, citrom</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Grillezett csirkemell salátával</td>
+                    <td>370</td>
+                    <td>32</td>
+                    <td>6</td>
+                    <td>18</td>
+                    <td>Csirkemell, zöldségek, olívaolaj</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Quinoás zöldségtál</td>
+                    <td>340</td>
+                    <td>12</td>
+                    <td>42</td>
+                    <td>12</td>
+                    <td>Quinoa, brokkoli, répa, olívaolaj</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Tojásos zöldséglepény</td>
+                    <td>270</td>
+                    <td>16</td>
+                    <td>10</td>
+                    <td>17</td>
+                    <td>Tojás, cukkini, répa, hagyma</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Vegán curry csicseriborsóval</td>
+                    <td>390</td>
+                    <td>15</td>
+                    <td>46</td>
+                    <td>14</td>
+                    <td>Csicseriborsó, kókusztej, curry fűszer</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Barnarizs grillezett zöldségekkel</td>
+                    <td>360</td>
+                    <td>9</td>
+                    <td>50</td>
+                    <td>13</td>
+                    <td>Barna rizs, padlizsán, paprika, cukkini</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Joghurtos gyümölcstál</td>
+                    <td>240</td>
+                    <td>10</td>
+                    <td>28</td>
+                    <td>9</td>
+                    <td>Natúr joghurt, bogyós gyümölcsök, dió</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Sütőtökkrémleves</td>
+                    <td>220</td>
+                    <td>4</td>
+                    <td>32</td>
+                    <td>8</td>
+                    <td>Sütőtök, hagyma, fokhagyma, növényi krém</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Humusz teljes kiőrlésű pitával</td>
+                    <td>320</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>Csicseriborsó, tahini, fokhagyma, pita</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Vegán wrap grillezett zöldségekkel</td>
+                    <td>360</td>
+                    <td>11</td>
+                    <td>42</td>
+                    <td>13</td>
+                    <td>Tortilla, padlizsán, paprika, csicseriborsó</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Kuszkusz mediterrán zöldségekkel</td>
+                    <td>330</td>
+                    <td>9</td>
+                    <td>46</td>
+                    <td>11</td>
+                    <td>Kuszkusz, paradicsom, olívaolaj, cukkini</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Lencseleves</td>
+                    <td>310</td>
+                    <td>17</td>
+                    <td>36</td>
+                    <td>9</td>
+                    <td>Lencse, zöldségek, fűszerek</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Tojásos avokádós saláta</td>
+                    <td>350</td>
+                    <td>14</td>
+                    <td>12</td>
+                    <td>25</td>
+                    <td>Tojás, avokádó, saláta, citromlé</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Sült zöldség batátaágyon</td>
+                    <td>340</td>
+                    <td>7</td>
+                    <td>48</td>
+                    <td>13</td>
+                    <td>Édesburgonya, cékla, répa, fűszerek</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Káposztasaláta olajos magokkal</td>
+                    <td>280</td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>18</td>
+                    <td>Káposzta, sárgarépa, tökmag, napraforgó</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Zöld turmix (smoothie)</td>
+                    <td>210</td>
+                    <td>5</td>
+                    <td>28</td>
+                    <td>6</td>
+                    <td>Spenót, banán, alma, citrom, víz</td>
+                </tr>
+
             </tbody>
         </table>
+
     </main>
-    
+
     <footer>
         <p>&copy; 2025 Weboldalam Fityó Györgyi LW34MW</p>
     </footer>
 </body>
+
 </html>

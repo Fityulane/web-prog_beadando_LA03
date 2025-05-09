@@ -73,3 +73,27 @@ button {
 button:hover {
     background-color: #a62020;
 }
+
+ .meal-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+
+ .sport-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .orderd_list{
+        list-style: decimal;
+      }
+      
+       .index-img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+      }
+
